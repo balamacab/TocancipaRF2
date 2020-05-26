@@ -1,0 +1,51 @@
+///// TERMINOS DE USO /////
+Autódromo de Tocancipa de Colombia es un addon (track) optimizado para el simulador AUTOMOBILISTA. Su descarga y distribución es totalmente libre y gratuita.
+
+Autódromo de Tocancipa fue inspirado en el real Autódromo de Tocancipa ubicado en Cundinamarca, Colombia, aunque tiene una gran similitud, sus medidas, planos, distancias, ubicación de estructuras y demás difieren de manera física del real, por eso no pretende ni es una réplica exacta real del mismo.
+
+Las marcas y logos usados se usan sin animo de lucro y con fines de entretenimiento, marca Automobilista de Reiza Studios respetamos sus derechos por la posibilidad de permitirnos usar el simulador e integrar nuestras modificaciones.
+
+Está PROHIBIDO su uso con fines comerciales y lucrativos, eventos promocionales de marca y/o similares sin autorización. Esta prohibido editar, modificar, extraer, alterar texturas o modelos, copiar o convertir todo el material incluido en el Autodromo.
+
+
+///// CREDITOS ///// 
+Sebastián Calderón, Alejandro Nieto, Dann Murillo Juan Arboleda, Nicolás Leyton, Felipe Merjech, Ricardo Soler, SIMRacersColombia, TC2000, Club Tortugas, Grupo de fans del Autodromo y de los simuladores.
+
+
+///// HISTORIAL ACTUALIZACIONES ///// 
+NUEVA V2.0
+- Optimizada la AI
+- Retexturizado y mejora de materiales
+- Brillos y reflejos de agua y ventanas en edificios
+- Nuevas camaras
+- Nuevas pantallas de carga
+- Nuevo cielo
+- Optimizado y adaptado al simulador AUTOMOBILISTA.
+- 4 variantes disponibles
+
+v1.5
+- Agregado pasto.
+- Agregado postes de luz y otros elementos decorativos.
+- Corregida fricción de las trampas de arena.
+- Terminadas todas las variantes.
+- Corregido error visual de vallas publicitarias.
+- Actualizaciones en general.
+
+BUGS v1.5:
+- La versión nocturna ofrece un espectacular cielo estrellado pero la iluminación en carrera es casi nula y las luces dejan ver algunos errores gráficos.
+- En algún sitio hay un hoyo al espacio, esperamos no lo encuentren.
+
+v1.0
+- Arreglado huecos y saltos de pista.
+- Corregidos registro en sectores en variantes sentido contrario reloj.
+- Ajustes de horizonte.
+
+
+///// INSTALACIÓN ///// 
+> Copie y pegue la carpeta raiz:  Autodromo_de_Tocancipa
+> Dentro de Automobilista/GameData/Locations/
+
+
+///// CONTACTO ///// 
+SIMRacersColombia  Facebook: SimRacersColombia  Instagram: SimRacersColombia
+Contacto: Camilo Osorio / Sebastián Calderon

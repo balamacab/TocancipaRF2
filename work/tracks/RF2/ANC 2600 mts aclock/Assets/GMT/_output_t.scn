@@ -1,0 +1,232 @@
+Instance=t0_s0
+{
+	MeshFile=t0_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s1
+{
+	MeshFile=t0_s1.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s2
+{
+	MeshFile=t0_s2.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s3
+{
+	MeshFile=t0_s3.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s4
+{
+	MeshFile=t0_s4.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s5
+{
+	MeshFile=t0_s5.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s6
+{
+	MeshFile=t0_s6.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s7
+{
+	MeshFile=t0_s7.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s8
+{
+	MeshFile=t0_s8.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s9
+{
+	MeshFile=t0_s9.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s10
+{
+	MeshFile=t0_s10.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s11
+{
+	MeshFile=t0_s11.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s12
+{
+	MeshFile=t0_s12.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s13
+{
+	MeshFile=t0_s13.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s14
+{
+	MeshFile=t0_s14.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s15
+{
+	MeshFile=t0_s15.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s16
+{
+	MeshFile=t0_s16.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s17
+{
+	MeshFile=t0_s17.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s18
+{
+	MeshFile=t0_s18.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s19
+{
+	MeshFile=t0_s19.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s20
+{
+	MeshFile=t0_s20.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s21
+{
+	MeshFile=t0_s21.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s22
+{
+	MeshFile=t0_s22.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s23
+{
+	MeshFile=t0_s23.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s24
+{
+	MeshFile=t0_s24.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s25
+{
+	MeshFile=t0_s25.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s26
+{
+	MeshFile=t0_s26.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s27
+{
+	MeshFile=t0_s27.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s28
+{
+	MeshFile=t0_s28.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s29
+{
+	MeshFile=t0_s29.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s30
+{
+	MeshFile=t0_s30.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s31
+{
+	MeshFile=t0_s31.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s32
+{
+	MeshFile=t0_s32.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s33
+{
+	MeshFile=t0_s33.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s34
+{
+	MeshFile=t0_s34.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s35
+{
+	MeshFile=t0_s35.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s36
+{
+	MeshFile=t0_s36.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s37
+{
+	MeshFile=t0_s37.gmt CollTarget=True HATTarget=True 
+}
+Instance=t0_s38
+{
+	MeshFile=t0_s38.gmt CollTarget=True HATTarget=True 
+}
+Instance=t1_s0
+{
+	MeshFile=t1_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t1_s1
+{
+	MeshFile=t1_s1.gmt CollTarget=True HATTarget=True 
+}
+Instance=t1_s2
+{
+	MeshFile=t1_s2.gmt CollTarget=True HATTarget=True 
+}
+Instance=t1_s3
+{
+	MeshFile=t1_s3.gmt CollTarget=True HATTarget=True 
+}
+Instance=t1_s4
+{
+	MeshFile=t1_s4.gmt CollTarget=True HATTarget=True 
+}
+Instance=t2_s0
+{
+	MeshFile=t2_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t3_s0
+{
+	MeshFile=t3_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t4_s0
+{
+	MeshFile=t4_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t5_s0
+{
+	MeshFile=t5_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t5_s1
+{
+	MeshFile=t5_s1.gmt CollTarget=True HATTarget=True 
+}
+Instance=t5_s2
+{
+	MeshFile=t5_s2.gmt CollTarget=True HATTarget=True 
+}
+Instance=t5_s3
+{
+	MeshFile=t5_s3.gmt CollTarget=True HATTarget=True 
+}
+Instance=t6_s0
+{
+	MeshFile=t6_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t7_s0
+{
+	MeshFile=t7_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t8_s0
+{
+	MeshFile=t8_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t9_s0
+{
+	MeshFile=t9_s0.gmt CollTarget=True HATTarget=True 
+}
+Instance=t9_s1
+{
+	MeshFile=t9_s1.gmt CollTarget=True HATTarget=True 
+}
+Instance=t9_s2
+{
+	MeshFile=t9_s2.gmt CollTarget=True HATTarget=True 
+}
+Instance=t9_s3
+{
+	MeshFile=t9_s3.gmt CollTarget=True HATTarget=True 
+}

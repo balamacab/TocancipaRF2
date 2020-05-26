@@ -1,0 +1,4608 @@
+CUBEASF
+
+//-------------------------------------------------------
+
+SearchPath=Autodromo Nacional Colombia
+SearchPath=Autodromo Nacional Colombia\ANC 2010 mts clock
+SearchPath=.
+
+//-------------------------------------------------------
+
+MASFile=sky.mas
+MASFile=COMMONMAPS.MAS
+MASFile=ANC 2010 mts clock_gmt.MAS
+MASFile=ANC 2010 mts clock.MAS
+
+View=mainview
+{
+Clear=False
+Color=(0, 0, 0)
+Size=(1.00, 1.00) Center=(0.5, 0.5)
+FOV=(77.75, 62.50)
+ClipPlanes=(0.05, 3500.0)
+View=rearview
+{
+Clear=False
+Color=(0, 0, 0)
+Size=(1024.00, 64.00) Center=(512, 32.00)
+FOV=(62.5, 62.5)
+ClipPlanes=(0.5, 150.0)
+}
+}
+
+//-------------------------------------------------------
+
+GroupMethod=LinkSingle
+AmbientColor=(100, 109, 136)
+
+//-------------------------------------------------------
+
+Light=Direct00
+{
+  Type=Directional  Color=(220, 220, 220)  Dir=(0.5, -0.9, 0.5)
+}
+
+//-------------------------------------------------------
+//-- Thanks to Neil Faichney (Krunch) for the following -
+//-- Skybox structure and textures!! --------------------
+//-------------------------------------------------------
+Light=NightLight00 // used only to activate horizon town light effect
+{
+  Type=Omni Pos=(-223.159912, 11.439373, 12.055908) Range=(0.000000, 1.000000) Active=True
+}
+
+Instance=skyboxi
+{
+  Moveable=True
+  MeshFile=skyboxi.gmt CollTarget=False HATTarget=False Render=False
+  Pos=(0.0,0.0,0.0) Orient=(0.0,0.0,0.0) // move and rotate whole skybox if required
+  Instance=CLOUDS
+  {
+    Moveable=True 
+    MeshFile=horizon.gmt CollTarget=False HATTarget=False
+    Instance=NightLight00Glow
+    {
+       Moveable=True
+       MeshFile=horizonlights.gmt CollTarget=False HATTarget=False
+    }
+    Instance=Sky
+    {
+      Moveable=True 
+      MeshFile=Sky.gmt CollTarget=False HATTarget=False
+    } 
+  }
+}
+
+Instance=t0_s0
+{
+  MeshFile=t0_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s1
+{
+  MeshFile=t0_s1.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s2
+{
+  MeshFile=t0_s2.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s3
+{
+  MeshFile=t0_s3.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s4
+{
+  MeshFile=t0_s4.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s5
+{
+  MeshFile=t0_s5.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s6
+{
+  MeshFile=t0_s6.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s7
+{
+  MeshFile=t0_s7.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s8
+{
+  MeshFile=t0_s8.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s9
+{
+  MeshFile=t0_s9.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s10
+{
+  MeshFile=t0_s10.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s11
+{
+  MeshFile=t0_s11.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s12
+{
+  MeshFile=t0_s12.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s13
+{
+  MeshFile=t0_s13.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s14
+{
+  MeshFile=t0_s14.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s15
+{
+  MeshFile=t0_s15.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s16
+{
+  MeshFile=t0_s16.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s17
+{
+  MeshFile=t0_s17.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s18
+{
+  MeshFile=t0_s18.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s19
+{
+  MeshFile=t0_s19.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s20
+{
+  MeshFile=t0_s20.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s21
+{
+  MeshFile=t0_s21.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s22
+{
+  MeshFile=t0_s22.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s23
+{
+  MeshFile=t0_s23.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s24
+{
+  MeshFile=t0_s24.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s25
+{
+  MeshFile=t0_s25.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s26
+{
+  MeshFile=t0_s26.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s27
+{
+  MeshFile=t0_s27.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s28
+{
+  MeshFile=t0_s28.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s29
+{
+  MeshFile=t0_s29.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s30
+{
+  MeshFile=t0_s30.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s31
+{
+  MeshFile=t0_s31.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s32
+{
+  MeshFile=t0_s32.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s33
+{
+  MeshFile=t0_s33.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s34
+{
+  MeshFile=t0_s34.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s35
+{
+  MeshFile=t0_s35.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s36
+{
+  MeshFile=t0_s36.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s37
+{
+  MeshFile=t0_s37.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t0_s38
+{
+  MeshFile=t0_s38.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t1_s0
+{
+  MeshFile=t1_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t1_s1
+{
+  MeshFile=t1_s1.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t1_s2
+{
+  MeshFile=t1_s2.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t1_s3
+{
+  MeshFile=t1_s3.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t1_s4
+{
+  MeshFile=t1_s4.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t2_s0
+{
+  MeshFile=t2_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t3_s0
+{
+  MeshFile=t3_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t4_s0
+{
+  MeshFile=t4_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t5_s0
+{
+  MeshFile=t5_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t5_s1
+{
+  MeshFile=t5_s1.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t5_s2
+{
+  MeshFile=t5_s2.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t5_s3
+{
+  MeshFile=t5_s3.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t6_s0
+{
+  MeshFile=t6_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t7_s0
+{
+  MeshFile=t7_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t8_s0
+{
+  MeshFile=t8_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t9_s0
+{
+  MeshFile=t9_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t9_s1
+{
+  MeshFile=t9_s1.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t9_s2
+{
+  MeshFile=t9_s2.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=t9_s3
+{
+  MeshFile=t9_s3.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta0
+{
+  MeshFile=ta0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta1
+{
+  MeshFile=ta1.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta2
+{
+  MeshFile=ta2.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta8
+{
+  MeshFile=ta8.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta9
+{
+  MeshFile=ta9.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta10
+{
+  MeshFile=ta10.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta12
+{
+  MeshFile=ta12.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta13
+{
+  MeshFile=ta13.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta14
+{
+  MeshFile=ta14.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta15
+{
+  MeshFile=ta15.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta16
+{
+  MeshFile=ta16.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta17
+{
+  MeshFile=ta17.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta18
+{
+  MeshFile=ta18.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta19
+{
+  MeshFile=ta19.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta20
+{
+  MeshFile=ta20.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta21
+{
+  MeshFile=ta21.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta22
+{
+  MeshFile=ta22.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta23
+{
+  MeshFile=ta23.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta24
+{
+  MeshFile=ta24.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta25
+{
+  MeshFile=ta25.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta26
+{
+  MeshFile=ta26.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta27
+{
+  MeshFile=ta27.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta28
+{
+  MeshFile=ta28.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta29
+{
+  MeshFile=ta29.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta30
+{
+  MeshFile=ta30.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta31
+{
+  MeshFile=ta31.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta32
+{
+  MeshFile=ta32.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta33
+{
+  MeshFile=ta33.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta34
+{
+  MeshFile=ta34.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta35
+{
+  MeshFile=ta35.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta36
+{
+  MeshFile=ta36.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta37
+{
+  MeshFile=ta37.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta38
+{
+  MeshFile=ta38.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta39
+{
+  MeshFile=ta39.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta40
+{
+  MeshFile=ta40.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta41
+{
+  MeshFile=ta41.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta42
+{
+  MeshFile=ta42.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta43
+{
+  MeshFile=ta43.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta44
+{
+  MeshFile=ta44.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta45
+{
+  MeshFile=ta45.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta46
+{
+  MeshFile=ta46.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta47
+{
+  MeshFile=ta47.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta48
+{
+  MeshFile=ta48.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta49
+{
+  MeshFile=ta49.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta50
+{
+  MeshFile=ta50.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta51
+{
+  MeshFile=ta51.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta52
+{
+  MeshFile=ta52.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta53
+{
+  MeshFile=ta53.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta54
+{
+  MeshFile=ta54.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta55
+{
+  MeshFile=ta55.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta56
+{
+  MeshFile=ta56.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta57
+{
+  MeshFile=ta57.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta58
+{
+  MeshFile=ta58.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta59
+{
+  MeshFile=ta59.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta60
+{
+  MeshFile=ta60.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta61
+{
+  MeshFile=ta61.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta62
+{
+  MeshFile=ta62.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta63
+{
+  MeshFile=ta63.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta64
+{
+  MeshFile=ta64.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta65
+{
+  MeshFile=ta65.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta66
+{
+  MeshFile=ta66.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta67
+{
+  MeshFile=ta67.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta68
+{
+  MeshFile=ta68.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta69
+{
+  MeshFile=ta69.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta70
+{
+  MeshFile=ta70.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta71
+{
+  MeshFile=ta71.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta72
+{
+  MeshFile=ta72.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta73
+{
+  MeshFile=ta73.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta74
+{
+  MeshFile=ta74.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta75
+{
+  MeshFile=ta75.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta76
+{
+  MeshFile=ta76.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta77
+{
+  MeshFile=ta77.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta78
+{
+  MeshFile=ta78.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta79
+{
+  MeshFile=ta79.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta80
+{
+  MeshFile=ta80.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta81
+{
+  MeshFile=ta81.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta84
+{
+  MeshFile=ta84.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta85
+{
+  MeshFile=ta85.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta86
+{
+  MeshFile=ta86.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta88
+{
+  MeshFile=ta88.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta89
+{
+  MeshFile=ta89.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta90
+{
+  MeshFile=ta90.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta91
+{
+  MeshFile=ta91.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=ta92
+{
+  MeshFile=ta92.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall0_s0
+{
+  MeshFile=wall0_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall1_s0
+{
+  MeshFile=wall1_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall1_s1
+{
+  MeshFile=wall1_s1.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall2_s0
+{
+  MeshFile=wall2_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall3_s0
+{
+  MeshFile=wall3_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall4_s0
+{
+  MeshFile=wall4_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall5_s0
+{
+  MeshFile=wall5_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall6_s0
+{
+  MeshFile=wall6_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall7_s0
+{
+  MeshFile=wall7_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall8_s0
+{
+  MeshFile=wall8_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall9_s0
+{
+  MeshFile=wall9_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall10_s0
+{
+  MeshFile=wall10_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall11_s0
+{
+  MeshFile=wall11_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall12_s0
+{
+  MeshFile=wall12_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall13_s0
+{
+  MeshFile=wall13_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall14_s0
+{
+  MeshFile=wall14_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall15_s0
+{
+  MeshFile=wall15_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall15_s1
+{
+  MeshFile=wall15_s1.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall15_s2
+{
+  MeshFile=wall15_s2.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall16_s0
+{
+  MeshFile=wall16_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall17_s0
+{
+  MeshFile=wall17_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=False
+}
+
+Instance=wall18_s0
+{
+  MeshFile=wall18_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall19_s0
+{
+  MeshFile=wall19_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall20_s0
+{
+  MeshFile=wall20_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall21_s0
+{
+  MeshFile=wall21_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall22_s0
+{
+  MeshFile=wall22_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall23_s0
+{
+  MeshFile=wall23_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall24_s0
+{
+  MeshFile=wall24_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall25_s0
+{
+  MeshFile=wall25_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall26_s0
+{
+  MeshFile=wall26_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall27_s0
+{
+  MeshFile=wall27_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall28_s0
+{
+  MeshFile=wall28_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall29_s0
+{
+  MeshFile=wall29_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall30_s0
+{
+  MeshFile=wall30_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall31_s0
+{
+  MeshFile=wall31_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall32_s0
+{
+  MeshFile=wall32_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall33_s0
+{
+  MeshFile=wall33_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall34_s0
+{
+  MeshFile=wall34_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall35_s0
+{
+  MeshFile=wall35_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall36_s0
+{
+  MeshFile=wall36_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall37_s0
+{
+  MeshFile=wall37_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall38_s0
+{
+  MeshFile=wall38_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall39_s0
+{
+  MeshFile=wall39_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=False
+}
+
+Instance=wall40_s0
+{
+  MeshFile=wall40_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=False
+}
+
+Instance=wall41_s0
+{
+  MeshFile=wall41_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall42_s0
+{
+  MeshFile=wall42_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall43_s0
+{
+  MeshFile=wall43_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall44_s0
+{
+  MeshFile=wall44_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall45_s0
+{
+  MeshFile=wall45_s0.gmt CollTarget=True HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall46_s0
+{
+  MeshFile=wall46_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall47_s0
+{
+  MeshFile=wall47_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall48_s0
+{
+  MeshFile=wall48_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall49_s0
+{
+  MeshFile=wall49_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall50_s0
+{
+  MeshFile=wall50_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall50_s1
+{
+  MeshFile=wall50_s1.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall50_s2
+{
+  MeshFile=wall50_s2.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall51_s0
+{
+  MeshFile=wall51_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall52_s0
+{
+  MeshFile=wall52_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall53_s0
+{
+  MeshFile=wall53_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall54_s0
+{
+  MeshFile=wall54_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall55_s0
+{
+  MeshFile=wall55_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall56_s0
+{
+  MeshFile=wall56_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall57_s0
+{
+  MeshFile=wall57_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall58_s0
+{
+  MeshFile=wall58_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall59_s0
+{
+  MeshFile=wall59_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall60_s0
+{
+  MeshFile=wall60_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall61_s0
+{
+  MeshFile=wall61_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall62_s0
+{
+  MeshFile=wall62_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall63_s0
+{
+  MeshFile=wall63_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall64_s0
+{
+  MeshFile=wall64_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall65_s0
+{
+  MeshFile=wall65_s0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=wall66_s0
+{
+  MeshFile=wall66_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall67_s0
+{
+  MeshFile=wall67_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall68_s0
+{
+  MeshFile=wall68_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall69_s0
+{
+  MeshFile=wall69_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall70_s0
+{
+  MeshFile=wall70_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall71_s0
+{
+  MeshFile=wall71_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall72_s0
+{
+  MeshFile=wall72_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall73_s0
+{
+  MeshFile=wall73_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall74_s0
+{
+  MeshFile=wall74_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall75_s0
+{
+  MeshFile=wall75_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall76_s0
+{
+  MeshFile=wall76_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall77_s0
+{
+  MeshFile=wall77_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall78_s0
+{
+  MeshFile=wall78_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall79_s0
+{
+  MeshFile=wall79_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall80_s0
+{
+  MeshFile=wall80_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall81_s0
+{
+  MeshFile=wall81_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall82_s0
+{
+  MeshFile=wall82_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall83_s0
+{
+  MeshFile=wall83_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall84_s0
+{
+  MeshFile=wall84_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall85_s0
+{
+  MeshFile=wall85_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall86_s0
+{
+  Render=False 
+  VisGroups=(32)
+  MeshFile=wall86_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall87_s0
+{
+  MeshFile=wall87_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall88_s0
+{
+  Render=False 
+  VisGroups=(32)
+  MeshFile=wall88_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall89_s0
+{
+  Render=False 
+  VisGroups=(32)
+  MeshFile=wall89_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall90_s0
+{
+  Render=False 
+  VisGroups=(32)
+  MeshFile=wall90_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall91_s0
+{
+  MeshFile=wall91_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall92_s0
+{
+  MeshFile=wall92_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall93_s0
+{
+  MeshFile=wall93_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall94_s0
+{
+  MeshFile=wall94_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall95_s0
+{
+  MeshFile=wall95_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall96_s0
+{
+  MeshFile=wall96_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall97_s0
+{
+  MeshFile=wall97_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall98_s0
+{
+  MeshFile=wall98_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall99_s0
+{
+  MeshFile=wall99_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall100_s0
+{
+  MeshFile=wall100_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall101_s0
+{
+  MeshFile=wall101_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall102_s0
+{
+  MeshFile=wall102_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall102_s1
+{
+  MeshFile=wall102_s1.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall103_s0
+{
+  MeshFile=wall103_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall103_s1
+{
+  MeshFile=wall103_s1.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall104_s0
+{
+  MeshFile=wall104_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall104_s1
+{
+  MeshFile=wall104_s1.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall104_s2
+{
+  MeshFile=wall104_s2.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall104_s3
+{
+  MeshFile=wall104_s3.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall105_s0
+{
+  MeshFile=wall105_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall107_s0
+{
+  MeshFile=wall107_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall108_s0
+{
+  MeshFile=wall108_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall109_s0
+{
+  MeshFile=wall109_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s0
+{
+  MeshFile=wall110_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s1
+{
+  MeshFile=wall110_s1.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s2
+{
+  MeshFile=wall110_s2.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s3
+{
+  MeshFile=wall110_s3.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s4
+{
+  MeshFile=wall110_s4.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s5
+{
+  MeshFile=wall110_s5.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s6
+{
+  MeshFile=wall110_s6.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall110_s7
+{
+  MeshFile=wall110_s7.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall111_s0
+{
+  MeshFile=wall111_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall112_s0
+{
+  MeshFile=wall112_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall113_s0
+{
+  MeshFile=wall113_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall114_s0
+{
+  MeshFile=wall114_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall115_s0
+{
+  MeshFile=wall115_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall116_s0
+{
+  MeshFile=wall116_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall117_s0
+{
+  MeshFile=wall117_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall118_s0
+{
+  MeshFile=wall118_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall119_s0
+{
+  MeshFile=wall119_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall120_s0
+{
+  MeshFile=wall120_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall121_s0
+{
+  MeshFile=wall121_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall122_s0
+{
+  MeshFile=wall122_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall123_s0
+{
+  MeshFile=wall123_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=True
+}
+
+Instance=wall124_s0
+{
+  MeshFile=wall124_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall125_s0
+{
+  MeshFile=wall125_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall126_s0
+{
+  MeshFile=wall126_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall127_s0
+{
+  MeshFile=wall127_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s0
+{
+  MeshFile=wall128_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s1
+{
+  MeshFile=wall128_s1.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s2
+{
+  MeshFile=wall128_s2.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s3
+{
+  MeshFile=wall128_s3.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s4
+{
+  MeshFile=wall128_s4.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s5
+{
+  MeshFile=wall128_s5.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s6
+{
+  MeshFile=wall128_s6.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s7
+{
+  MeshFile=wall128_s7.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s8
+{
+  MeshFile=wall128_s8.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s9
+{
+  MeshFile=wall128_s9.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s10
+{
+  MeshFile=wall128_s10.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s11
+{
+  MeshFile=wall128_s11.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s12
+{
+  MeshFile=wall128_s12.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s13
+{
+  MeshFile=wall128_s13.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s14
+{
+  MeshFile=wall128_s14.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s15
+{
+  MeshFile=wall128_s15.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s16
+{
+  MeshFile=wall128_s16.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s17
+{
+  MeshFile=wall128_s17.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s18
+{
+  MeshFile=wall128_s18.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s19
+{
+  MeshFile=wall128_s19.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s20
+{
+  MeshFile=wall128_s20.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s21
+{
+  MeshFile=wall128_s21.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s22
+{
+  MeshFile=wall128_s22.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s23
+{
+  MeshFile=wall128_s23.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s24
+{
+  MeshFile=wall128_s24.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s25
+{
+  MeshFile=wall128_s25.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s26
+{
+  MeshFile=wall128_s26.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall128_s27
+{
+  MeshFile=wall128_s27.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall129_s0
+{
+  MeshFile=wall129_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall130_s0
+{
+  MeshFile=wall130_s0.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall131_s0
+{
+  Render=False 
+  MeshFile=wall131_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall132_s0
+{
+  Render=False 
+  MeshFile=wall132_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall133_s0
+{
+  Render=False 
+  MeshFile=wall133_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=wall134_s0
+{
+  MeshFile=wall134_s0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone0
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone0.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone1
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone1.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone2
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone2.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone3
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone3.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone4
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone4.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone5
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone5.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone6
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone6.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone7
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone7.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone8
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone8.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone9
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone9.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone10
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone10.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone11
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone11.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone12
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone12.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone13
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone13.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone14
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone14.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone15
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone15.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone16
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone16.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone17
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone17.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone18
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone18.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone19
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone19.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone20
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone20.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone21
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone21.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone22
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone22.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone23
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone23.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone24
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone24.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone25
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone25.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone26
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone26.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone27
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone27.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone28
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone28.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone29
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone29.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone30
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone30.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone31
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone31.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone32
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone32.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone33
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone33.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone34
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone34.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone35
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone35.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone36
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone36.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone37
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone37.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone38
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone38.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone39
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone39.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone40
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone40.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone41
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone41.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone42
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone42.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone43
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone43.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone44
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone44.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone45
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone45.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone46
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone46.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone47
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone47.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone48
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone48.gmt CollTarget=True HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 32, 32)
+}
+
+Instance=cone49
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone49.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone50
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone50.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone51
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone51.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone52
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone52.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone53
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone53.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone54
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone54.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone55
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone55.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone56
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone56.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone57
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone57.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone58
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone58.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone59
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone59.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone60
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone60.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone61
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone61.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone62
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone62.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone63
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone63.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone64
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone64.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone65
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone65.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone66
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone66.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone67
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone67.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone68
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone68.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone69
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone69.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone70
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone70.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone71
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone71.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone72
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone72.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone73
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone73.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone74
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone74.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone75
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone75.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone76
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone76.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone77
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone77.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone78
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone78.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone79
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone79.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone80
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone80.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone81
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone81.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone82
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone82.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone83
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone83.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone84
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone84.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=cone85
+{
+  Moveable=True  VisGroups=(32)
+  MeshFile=cone85.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_86
+{
+  MeshFile=obj_86.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 256, 256)
+}
+
+Instance=obj_87
+{
+  MeshFile=obj_87.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_88
+{
+  MeshFile=obj_88.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_89
+{
+  MeshFile=obj_89.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_90
+{
+  MeshFile=obj_90.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_91
+{
+  MeshFile=obj_91.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_92
+{
+  MeshFile=obj_92.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_93
+{
+  MeshFile=obj_93.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_94
+{
+  MeshFile=obj_94.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_95
+{
+  MeshFile=obj_95.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_96
+{
+  MeshFile=obj_96.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_97
+{
+  MeshFile=obj_97.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_98
+{
+  MeshFile=obj_98.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_99
+{
+  MeshFile=obj_99.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_100
+{
+  MeshFile=obj_100.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=obj_101
+{
+  MeshFile=obj_101.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=obj_102
+{
+  MeshFile=obj_102.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_103
+{
+  MeshFile=obj_103.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_104
+{
+  MeshFile=obj_104.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_105
+{
+  MeshFile=obj_105.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_106
+{
+  MeshFile=obj_106.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_107
+{
+  MeshFile=obj_107.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=obj_108
+{
+  MeshFile=obj_108.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=obj_109
+{
+  MeshFile=obj_109.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=obj_110
+{
+  MeshFile=obj_110.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_111
+{
+  MeshFile=obj_111.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=obj_112
+{
+  MeshFile=obj_112.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_113
+{
+  MeshFile=obj_113.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_114
+{
+  MeshFile=obj_114.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_115
+{
+  MeshFile=obj_115.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_116
+{
+  MeshFile=obj_116.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_117
+{
+  MeshFile=obj_117.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_118
+{
+  MeshFile=obj_118.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_119
+{
+  MeshFile=obj_119.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_120
+{
+  MeshFile=obj_120.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_121
+{
+  MeshFile=obj_121.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_122
+{
+  MeshFile=obj_122.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_123
+{
+  MeshFile=obj_123.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_124
+{
+  MeshFile=obj_124.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_125
+{
+  MeshFile=obj_125.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Static, Solid, 128, 128)
+}
+
+Instance=obj_126
+{
+  MeshFile=obj_126.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 256, 256)
+}
+
+Instance=obj_127
+{
+  MeshFile=obj_127.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 256, 256)
+}
+
+Instance=obj_128
+{
+  MeshFile=obj_128.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 256, 256)
+}
+
+Instance=obj_129
+{
+  MeshFile=obj_129.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_130
+{
+  MeshFile=obj_130.gmt CollTarget=False HATTarget=True ShadowReceiver=False
+}
+
+Instance=obj_131
+{
+  MeshFile=obj_131.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_132
+{
+  MeshFile=obj_132.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_133
+{
+  MeshFile=obj_133.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_134
+{
+  MeshFile=obj_134.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_135
+{
+  MeshFile=obj_135.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_136
+{
+  MeshFile=obj_136.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_137
+{
+  MeshFile=obj_137.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_138
+{
+  MeshFile=obj_138.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_139
+{
+  MeshFile=obj_139.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_140
+{
+  MeshFile=obj_140.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_141
+{
+  MeshFile=obj_141.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_142
+{
+  MeshFile=obj_142.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_143
+{
+  MeshFile=obj_143.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_144
+{
+  MeshFile=obj_144.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_145
+{
+  MeshFile=obj_145.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_146
+{
+  MeshFile=obj_146.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_147
+{
+  MeshFile=obj_147.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_148
+{
+  MeshFile=obj_148.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_149
+{
+  MeshFile=obj_149.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_150
+{
+  MeshFile=obj_150.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_151
+{
+  MeshFile=obj_151.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_152
+{
+  MeshFile=obj_152.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_153
+{
+  MeshFile=obj_153.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_154
+{
+  MeshFile=obj_154.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_155
+{
+  MeshFile=obj_155.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_156
+{
+  MeshFile=obj_156.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_157
+{
+  MeshFile=obj_157.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_158
+{
+  MeshFile=obj_158.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_159
+{
+  MeshFile=obj_159.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_160
+{
+  MeshFile=obj_160.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_161
+{
+  MeshFile=obj_161.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_162
+{
+  MeshFile=obj_162.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_163
+{
+  MeshFile=obj_163.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_164
+{
+  MeshFile=obj_164.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_165
+{
+  MeshFile=obj_165.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_166
+{
+  MeshFile=obj_166.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_167
+{
+  MeshFile=obj_167.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_168
+{
+  MeshFile=obj_168.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_169
+{
+  MeshFile=obj_169.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_170
+{
+  MeshFile=obj_170.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_171
+{
+  MeshFile=obj_171.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_172
+{
+  MeshFile=obj_172.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_173
+{
+  MeshFile=obj_173.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_174
+{
+  MeshFile=obj_174.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_175
+{
+  MeshFile=obj_175.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_176
+{
+  MeshFile=obj_176.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_177
+{
+  MeshFile=obj_177.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_178
+{
+  MeshFile=obj_178.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_179
+{
+  MeshFile=obj_179.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_180
+{
+  MeshFile=obj_180.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_181
+{
+  MeshFile=obj_181.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_182
+{
+  MeshFile=obj_182.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_183
+{
+  MeshFile=obj_183.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_184
+{
+  MeshFile=obj_184.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_185
+{
+  MeshFile=obj_185.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_186
+{
+  MeshFile=obj_186.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_187
+{
+  MeshFile=obj_187.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_188
+{
+  MeshFile=obj_188.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_189
+{
+  MeshFile=obj_189.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_190
+{
+  MeshFile=obj_190.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_191
+{
+  MeshFile=obj_191.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_192
+{
+  MeshFile=obj_192.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_193
+{
+  MeshFile=obj_193.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_194
+{
+  MeshFile=obj_194.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_195
+{
+  MeshFile=obj_195.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_196
+{
+  MeshFile=obj_196.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_197
+{
+  MeshFile=obj_197.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_198
+{
+  MeshFile=obj_198.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_199
+{
+  MeshFile=obj_199.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_200
+{
+  MeshFile=obj_200.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_201
+{
+  MeshFile=obj_201.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_202
+{
+  MeshFile=obj_202.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_203
+{
+  MeshFile=obj_203.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_204
+{
+  MeshFile=obj_204.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_205
+{
+  MeshFile=obj_205.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_206
+{
+  MeshFile=obj_206.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_207
+{
+  MeshFile=obj_207.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_208
+{
+  MeshFile=obj_208.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_209
+{
+  MeshFile=obj_209.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_210
+{
+  MeshFile=obj_210.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_211
+{
+  MeshFile=obj_211.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_212
+{
+  MeshFile=obj_212.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_213
+{
+  MeshFile=obj_213.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_214
+{
+  MeshFile=obj_214.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_215
+{
+  MeshFile=obj_215.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_216
+{
+  MeshFile=obj_216.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_217
+{
+  MeshFile=obj_217.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_218
+{
+  MeshFile=obj_218.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_219
+{
+  MeshFile=obj_219.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_220
+{
+  MeshFile=obj_220.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_221
+{
+  MeshFile=obj_221.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_222
+{
+  MeshFile=obj_222.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_223
+{
+  MeshFile=obj_223.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_224
+{
+  MeshFile=obj_224.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_225
+{
+  MeshFile=obj_225.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_226
+{
+  MeshFile=obj_226.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_227
+{
+  MeshFile=obj_227.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_228
+{
+  MeshFile=obj_228.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_229
+{
+  MeshFile=obj_229.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_230
+{
+  MeshFile=obj_230.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_231
+{
+  MeshFile=obj_231.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_232
+{
+  MeshFile=obj_232.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_233
+{
+  MeshFile=obj_233.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_234
+{
+  MeshFile=obj_234.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_235
+{
+  MeshFile=obj_235.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_236
+{
+  MeshFile=obj_236.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_237
+{
+  MeshFile=obj_237.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_238
+{
+  MeshFile=obj_238.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_239
+{
+  MeshFile=obj_239.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_240
+{
+  MeshFile=obj_240.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_241
+{
+  MeshFile=obj_241.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_242
+{
+  MeshFile=obj_242.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_243
+{
+  MeshFile=obj_243.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_244
+{
+  MeshFile=obj_244.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_245
+{
+  MeshFile=obj_245.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_246
+{
+  MeshFile=obj_246.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_247
+{
+  MeshFile=obj_247.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_248
+{
+  MeshFile=obj_248.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_249
+{
+  MeshFile=obj_249.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_250
+{
+  MeshFile=obj_250.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_251
+{
+  MeshFile=obj_251.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_252
+{
+  MeshFile=obj_252.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_253
+{
+  MeshFile=obj_253.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_254
+{
+  MeshFile=obj_254.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_255
+{
+  MeshFile=obj_255.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_256
+{
+  MeshFile=obj_256.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_257
+{
+  MeshFile=obj_257.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_258
+{
+  MeshFile=obj_258.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_259
+{
+  MeshFile=obj_259.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_260
+{
+  MeshFile=obj_260.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_261
+{
+  MeshFile=obj_261.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_262
+{
+  MeshFile=obj_262.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_263
+{
+  MeshFile=obj_263.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_264
+{
+  MeshFile=obj_264.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_265
+{
+  MeshFile=obj_265.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_266
+{
+  MeshFile=obj_266.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_267
+{
+  MeshFile=obj_267.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_268
+{
+  MeshFile=obj_268.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_269
+{
+  MeshFile=obj_269.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_270
+{
+  MeshFile=obj_270.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_271
+{
+  MeshFile=obj_271.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_272
+{
+  MeshFile=obj_272.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_273
+{
+  MeshFile=obj_273.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_274
+{
+  MeshFile=obj_274.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_275
+{
+  MeshFile=obj_275.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_276
+{
+  MeshFile=obj_276.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_277
+{
+  MeshFile=obj_277.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_278
+{
+  MeshFile=obj_278.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_279
+{
+  MeshFile=obj_279.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_280
+{
+  MeshFile=obj_280.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_281
+{
+  MeshFile=obj_281.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_282
+{
+  MeshFile=obj_282.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_283
+{
+  MeshFile=obj_283.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_284
+{
+  MeshFile=obj_284.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_285
+{
+  MeshFile=obj_285.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_286
+{
+  MeshFile=obj_286.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_287
+{
+  MeshFile=obj_287.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_288
+{
+  MeshFile=obj_288.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_289
+{
+  MeshFile=obj_289.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_290
+{
+  MeshFile=obj_290.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_291
+{
+  MeshFile=obj_291.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_292
+{
+  MeshFile=obj_292.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_293
+{
+  MeshFile=obj_293.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_294
+{
+  MeshFile=obj_294.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_295
+{
+  MeshFile=obj_295.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_296
+{
+  MeshFile=obj_296.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_297
+{
+  MeshFile=obj_297.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_298
+{
+  MeshFile=obj_298.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_299
+{
+  MeshFile=obj_299.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 256, 256)
+}
+
+Instance=obj_300
+{
+  MeshFile=obj_300.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_301
+{
+  MeshFile=obj_301.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_302
+{
+  MeshFile=obj_302.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_303
+{
+  MeshFile=obj_303.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_304
+{
+  MeshFile=obj_304.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_305
+{
+  MeshFile=obj_305.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_306
+{
+  MeshFile=obj_306.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_307
+{
+  MeshFile=obj_307.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_308
+{
+  MeshFile=obj_308.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_309
+{
+  MeshFile=obj_309.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_310
+{
+  MeshFile=obj_310.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_311
+{
+  MeshFile=obj_311.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_312
+{
+  MeshFile=obj_312.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_313
+{
+  MeshFile=obj_313.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_314
+{
+  MeshFile=obj_314.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_315
+{
+  MeshFile=obj_315.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_316
+{
+  MeshFile=obj_316.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_317
+{
+  MeshFile=obj_317.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_318
+{
+  MeshFile=obj_318.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_319
+{
+  MeshFile=obj_319.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_320
+{
+  MeshFile=obj_320.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_321
+{
+  MeshFile=obj_321.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_322
+{
+  MeshFile=obj_322.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_323
+{
+  MeshFile=obj_323.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_324
+{
+  MeshFile=obj_324.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_325
+{
+  MeshFile=obj_325.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_326
+{
+  MeshFile=obj_326.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_327
+{
+  MeshFile=obj_327.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_328
+{
+  MeshFile=obj_328.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_329
+{
+  MeshFile=obj_329.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_330
+{
+  MeshFile=obj_330.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_331
+{
+  MeshFile=obj_331.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_332
+{
+  MeshFile=obj_332.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_333
+{
+  MeshFile=obj_333.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_334
+{
+  MeshFile=obj_334.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_335
+{
+  MeshFile=obj_335.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_336
+{
+  MeshFile=obj_336.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_337
+{
+  MeshFile=obj_337.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_338
+{
+  MeshFile=obj_338.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_339
+{
+  MeshFile=obj_339.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_340
+{
+  MeshFile=obj_340.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_341
+{
+  MeshFile=obj_341.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_342
+{
+  MeshFile=obj_342.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_343
+{
+  MeshFile=obj_343.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_344
+{
+  MeshFile=obj_344.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_345
+{
+  MeshFile=obj_345.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_346
+{
+  MeshFile=obj_346.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_347
+{
+  MeshFile=obj_347.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_348
+{
+  MeshFile=obj_348.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_349
+{
+  MeshFile=obj_349.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_350
+{
+  MeshFile=obj_350.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_351
+{
+  MeshFile=obj_351.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_352
+{
+  MeshFile=obj_352.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_353
+{
+  MeshFile=obj_353.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_354
+{
+  MeshFile=obj_354.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_355
+{
+  Planes=(4)
+  MeshFile=obj_355.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_356
+{
+  MeshFile=obj_356.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_357
+{
+  MeshFile=obj_357.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_358
+{
+  MeshFile=obj_358.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_359
+{
+  MeshFile=obj_359.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_360
+{
+  MeshFile=obj_360.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_361
+{
+  MeshFile=obj_361.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_362
+{
+  MeshFile=obj_362.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_363
+{
+  MeshFile=obj_363.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_364
+{
+  MeshFile=obj_364.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_365
+{
+  MeshFile=obj_365.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_366
+{
+  MeshFile=obj_366.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_367
+{
+  MeshFile=obj_367.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_368
+{
+  MeshFile=obj_368.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_369
+{
+  MeshFile=obj_369.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_370
+{
+  MeshFile=obj_370.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_371
+{
+  MeshFile=obj_371.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_372
+{
+  MeshFile=obj_372.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_373
+{
+  MeshFile=obj_373.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_374
+{
+  MeshFile=obj_374.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_375
+{
+  MeshFile=obj_375.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_376
+{
+  MeshFile=obj_376.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_377
+{
+  MeshFile=obj_377.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_378
+{
+  MeshFile=obj_378.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_379
+{
+  MeshFile=obj_379.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_380
+{
+  MeshFile=obj_380.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_381
+{
+  MeshFile=obj_381.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_382
+{
+  MeshFile=obj_382.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_383
+{
+  MeshFile=obj_383.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_384
+{
+  MeshFile=obj_384.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_385
+{
+  MeshFile=obj_385.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_386
+{
+  MeshFile=obj_386.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_387
+{
+  MeshFile=obj_387.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_388
+{
+  MeshFile=obj_388.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_389
+{
+  MeshFile=obj_389.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_390
+{
+  MeshFile=obj_390.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_391
+{
+  MeshFile=obj_391.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_392
+{
+  MeshFile=obj_392.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_393
+{
+  MeshFile=obj_393.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_394
+{
+  MeshFile=obj_394.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_395
+{
+  MeshFile=obj_395.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_396
+{
+  MeshFile=obj_396.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_397
+{
+  MeshFile=obj_397.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_398
+{
+  MeshFile=obj_398.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_399
+{
+  MeshFile=obj_399.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_400
+{
+  MeshFile=obj_400.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_401
+{
+  MeshFile=obj_401.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_402
+{
+  MeshFile=obj_402.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_403
+{
+  MeshFile=obj_403.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_404
+{
+  MeshFile=obj_404.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_405
+{
+  MeshFile=obj_405.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_406
+{
+  MeshFile=obj_406.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_407
+{
+  MeshFile=obj_407.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_408
+{
+  MeshFile=obj_408.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_409
+{
+  MeshFile=obj_409.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_410
+{
+  MeshFile=obj_410.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_411
+{
+  MeshFile=obj_411.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_412
+{
+  MeshFile=obj_412.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_413
+{
+  MeshFile=obj_413.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_414
+{
+  MeshFile=obj_414.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_415
+{
+  MeshFile=obj_415.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_416
+{
+  MeshFile=obj_416.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_417
+{
+  MeshFile=obj_417.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_418
+{
+  MeshFile=obj_418.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_419
+{
+  MeshFile=obj_419.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_420
+{
+  MeshFile=obj_420.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_421
+{
+  MeshFile=obj_421.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_422
+{
+  MeshFile=obj_422.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_423
+{
+  MeshFile=obj_423.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_424
+{
+  MeshFile=obj_424.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_425
+{
+  MeshFile=obj_425.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_426
+{
+  MeshFile=obj_426.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_427
+{
+  MeshFile=obj_427.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_428
+{
+  MeshFile=obj_428.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_429
+{
+  MeshFile=obj_429.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_430
+{
+  MeshFile=obj_430.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_431
+{
+  MeshFile=obj_431.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_432
+{
+  MeshFile=obj_432.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_433
+{
+  MeshFile=obj_433.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_434
+{
+  MeshFile=obj_434.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_435
+{
+  MeshFile=obj_435.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_436
+{
+  MeshFile=obj_436.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_437
+{
+  MeshFile=obj_437.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_438
+{
+  MeshFile=obj_438.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_439
+{
+  MeshFile=obj_439.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_440
+{
+  MeshFile=obj_440.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_441
+{
+  MeshFile=obj_441.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_442
+{
+  MeshFile=obj_442.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_443
+{
+  MeshFile=obj_443.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_444
+{
+  MeshFile=obj_444.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_445
+{
+  MeshFile=obj_445.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_446
+{
+  MeshFile=obj_446.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_447
+{
+  MeshFile=obj_447.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_448
+{
+  MeshFile=obj_448.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_449
+{
+  MeshFile=obj_449.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_450
+{
+  MeshFile=obj_450.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_451
+{
+  MeshFile=obj_451.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_452
+{
+  MeshFile=obj_452.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_453
+{
+  MeshFile=obj_453.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_454
+{
+  MeshFile=obj_454.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_455
+{
+  MeshFile=obj_455.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_456
+{
+  MeshFile=obj_456.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_457
+{
+  MeshFile=obj_457.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_458
+{
+  MeshFile=obj_458.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_459
+{
+  MeshFile=obj_459.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_460
+{
+  MeshFile=obj_460.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_461
+{
+  MeshFile=obj_461.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_462
+{
+  MeshFile=obj_462.gmt CollTarget=False HATTarget=False ShadowReceiver=False ShadowCaster=(Dynamic, Solid, 128, 128)
+}
+
+Instance=obj_463
+{
+  MeshFile=obj_463.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_464
+{
+  MeshFile=obj_464.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=pitlightin
+{
+  Planes=(4)
+  MeshFile=pitlightin.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=pitglowin
+{
+  Planes=(4)
+  MeshFile=pitglowin.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=pitlightout
+{
+  MeshFile=pitlightout.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=pitglowout
+{
+  MeshFile=pitglowout.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=startglow
+{
+  Planes=(4)
+  MeshFile=startglow.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=startlight
+{
+  Planes=(4)
+  MeshFile=startlight.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_471
+{
+  MeshFile=obj_471.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Light=NightLight01
+{
+   Type=Omni Pos=(-89.06773, 30.39051, -290.7209) Range=(0, 30) Active=True Intensity=(1) Color=(255, 255, 255)
+}
+
+Instance=NightLight01Glow
+{
+  MeshFile=NightLight01Glow.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Light=NightLight02
+{
+   Type=Omni Pos=(-79.68658, 30.32899, -262.1453) Range=(0, 30) Active=True Intensity=(1) Color=(255, 255, 255)
+}
+
+Instance=NightLight02Glow
+{
+  MeshFile=NightLight02Glow.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=obj_474
+{
+  MeshFile=obj_474.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Light=NightLight03
+{
+   Type=Omni Pos=(249.5853, 31.30458, -249.1945) Range=(0, 30) Active=True Intensity=(1) Color=(255, 255, 255)
+}
+
+Instance=NightLight03Glow
+{
+  MeshFile=NightLight03Glow.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=objc_0
+{
+  Render=False 
+  MeshFile=objc_0.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_0
+{
+  MeshFile=sobj_0.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_1
+{
+  MeshFile=sobj_1.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_2
+{
+  MeshFile=sobj_2.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_3
+{
+  MeshFile=sobj_3.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_4
+{
+  MeshFile=sobj_4.gmt CollTarget=False HATTarget=False ShadowReceiver=True
+}
+
+Instance=sobj_5
+{
+  MeshFile=sobj_5.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_6
+{
+  MeshFile=sobj_6.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_7
+{
+  MeshFile=sobj_7.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_8
+{
+  MeshFile=sobj_8.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_9
+{
+  MeshFile=sobj_9.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_10
+{
+  MeshFile=sobj_10.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_11
+{
+  MeshFile=sobj_11.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_12
+{
+  MeshFile=sobj_12.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_13
+{
+  MeshFile=sobj_13.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_14
+{
+  MeshFile=sobj_14.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_15
+{
+  MeshFile=sobj_15.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_16
+{
+  MeshFile=sobj_16.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_17
+{
+  MeshFile=sobj_17.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_18
+{
+  MeshFile=sobj_18.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_19
+{
+  MeshFile=sobj_19.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_20
+{
+  MeshFile=sobj_20.gmt CollTarget=False HATTarget=True ShadowReceiver=True
+}
+
+Instance=sobj_21
+{
+  MeshFile=sobj_21.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_22
+{
+  MeshFile=sobj_22.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_23
+{
+  MeshFile=sobj_23.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_24
+{
+  MeshFile=sobj_24.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_25
+{
+  MeshFile=sobj_25.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_26
+{
+  MeshFile=sobj_26.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_27
+{
+  MeshFile=sobj_27.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_28
+{
+  MeshFile=sobj_28.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_29
+{
+  MeshFile=sobj_29.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_30
+{
+  MeshFile=sobj_30.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_31
+{
+  MeshFile=sobj_31.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_32
+{
+  MeshFile=sobj_32.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_33
+{
+  MeshFile=sobj_33.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_34
+{
+  MeshFile=sobj_34.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_35
+{
+  MeshFile=sobj_35.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_36
+{
+  MeshFile=sobj_36.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_37
+{
+  MeshFile=sobj_37.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_38
+{
+  MeshFile=sobj_38.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_39
+{
+  MeshFile=sobj_39.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_40
+{
+  MeshFile=sobj_40.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_41
+{
+  MeshFile=sobj_41.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_42
+{
+  MeshFile=sobj_42.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_43
+{
+  MeshFile=sobj_43.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_44
+{
+  MeshFile=sobj_44.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_45
+{
+  MeshFile=sobj_45.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_46
+{
+  MeshFile=sobj_46.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_47
+{
+  MeshFile=sobj_47.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_48
+{
+  MeshFile=sobj_48.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_49
+{
+  MeshFile=sobj_49.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_50
+{
+  MeshFile=sobj_50.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_51
+{
+  MeshFile=sobj_51.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_52
+{
+  MeshFile=sobj_52.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_53
+{
+  MeshFile=sobj_53.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_54
+{
+  MeshFile=sobj_54.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_55
+{
+  MeshFile=sobj_55.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_56
+{
+  MeshFile=sobj_56.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_57
+{
+  MeshFile=sobj_57.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_58
+{
+  MeshFile=sobj_58.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_59
+{
+  MeshFile=sobj_59.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_60
+{
+  MeshFile=sobj_60.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_61
+{
+  MeshFile=sobj_61.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_62
+{
+  MeshFile=sobj_62.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_63
+{
+  MeshFile=sobj_63.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_64
+{
+  MeshFile=sobj_64.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_65
+{
+  MeshFile=sobj_65.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_66
+{
+  MeshFile=sobj_66.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_67
+{
+  MeshFile=sobj_67.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_68
+{
+  MeshFile=sobj_68.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_69
+{
+  MeshFile=sobj_69.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_70
+{
+  MeshFile=sobj_70.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_71
+{
+  MeshFile=sobj_71.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_72
+{
+  MeshFile=sobj_72.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_73
+{
+  MeshFile=sobj_73.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_74
+{
+  MeshFile=sobj_74.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_75
+{
+  MeshFile=sobj_75.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_76
+{
+  MeshFile=sobj_76.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+}
+
+Instance=sobj_77
+{
+  MeshFile=sobj_77.gmt CollTarget=False HATTarget=False ShadowReceiver=False
+}
+
+Instance=xfinish
+{
+  Render=False 
+  Change=False 
+  MeshFile=xfinish.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+  Response=VEHICLE,TIMING
+}
+
+Instance=xsector1
+{
+  Render=False 
+  Change=False 
+  MeshFile=xsector1.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+  Response=VEHICLE,TIMING
+}
+
+Instance=xsector2
+{
+  Render=False 
+  Change=False 
+  MeshFile=xsector2.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+  Response=VEHICLE,TIMING
+}
+
+Instance=xpitin
+{
+  Render=False 
+  Change=False 
+  MeshFile=xpitin.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+  Response=VEHICLE,PITSTOP
+}
+
+Instance=xpitout
+{
+  Render=False 
+  Change=False 
+  MeshFile=xpitout.gmt CollTarget=True HATTarget=False ShadowReceiver=False
+  Response=VEHICLE,PITSTOP
+}
+

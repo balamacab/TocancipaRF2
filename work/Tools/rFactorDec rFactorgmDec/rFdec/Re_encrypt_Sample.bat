@@ -1,0 +1,1 @@
+rfactordec -o -e -s 0xde4139f961fa2817 c:\input_folder c:\output_folder

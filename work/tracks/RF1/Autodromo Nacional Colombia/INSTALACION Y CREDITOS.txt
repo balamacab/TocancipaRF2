@@ -1,0 +1,62 @@
+Términos de uso
+
+Autódromo Nacional de Colombia es un addon (track) para el simulador de automovilismo rFactor TM. Su descarga y distribución es totalmente libre y gratuita.
+
+Autódromo Nacional de Colombia fue inspirado en el real Autódromo de Tocancipa ubicado en Cundinamarca, Colombia, aunque tiene una gran similitud, sus medidas, planos, distancias, ubicación de estructuras y demás difieren de manera física del real, por eso no pretende ni es una réplica virtual del mismo por lo cual no guardan ninguna relación con o sus propietarios.
+
+Las marcas, nombres y logos aquí registrados son ficticios, únicamente rfactor a quién SRC dedica el proyecto por permitirnos horas y horas de diversión en su espectacular simulador.
+
+Está PROHIBIDO su uso con fines comerciales y lucrativos, eventos promocionales de marca y/o similares sin autorización.
+
+
+VERSIONES:
+
+v1.0
+- Corregido hoyos y saltos de pista.
+- Corregidos registro en sectores en variantes sentido contrario reloj.
+- Ajustes de horizonte.
+
+v1.5
+- Agregado pasto.
+- Agregado postes de luz y otros elementos decorativos.
+- Corregida fricción de las trampas de arena.
+- Terminadas todas las variantes.
+- Corregido error visual de vallas publicitarias.
+- Actualizaciones en general.
+
+BUGS:
+
+- La versión nocturna ofrece un espectacular cielo estrellado pero la iluminación en carrera es casi nula y las luces dejan ver algunos errores gráficos.
+- En algún sitio hay un hoyo al espacio, espero no lo encuentren jajaja.
+- No hay versión ovalo.
+- Recuerden que aunque muy similar no es réplica del autodromo de Tocancipa.
+
+INSTALACIÓN:
+
+Las instrucciones para la instalación del Autodromo y del Simulador están incluidas en un archivo de texto dentro de la carpeta del Autódromo.
+
+- La descarga del autodromo es de 70mb, archivo único. 
+- Para descomprimir usar 7zip.
+
+Los requisitos mínimos para el simulador són:
+
+    CPU: 1,4 GHz
+    RAM: 512 MB
+    128 MB de video RAM.
+    1 GB de espacio en disco.
+    Conexión a Internet para activación
+
+
+Agradecimientos especiales a Sebastián Calderón con quien tuve el gusto de trabajar y crear juntos un proyecto que finalmente entregamos a ustedes los aficionados, pilotos, gamers, grupo Tc2000 y demás personas que nos acompañaron con sus opiniones, sugerencias, apoyo durante el desarrollo para que fuera lo más atractivo y completo posible...  Alejandro Nieto, Juan Arboleda, Carlos Grimaldo, Carlos Ardila, Nicolás Leyton, Felipe Merjech, Ricardo Soler, Felipe Triana, Rodrigo Triana, Juan Pablo Clopatofsky, Mario Jaramillo, Felipe Arango, Sergio Lombo y una lista sin fin de personas que lo hicieron posible... yo Camilo Osorio agradezco de manera personal a mi familia y mi amada Alejandra por el apoyo incondicional.
+
+
+- Disfrutenlo! Saludos! - Sim Racers Colombia -
+
+
+https://www.facebook.com/groups/20790751166/
+https://www.facebook.com/simracerscolombia
+www.simracerscolombia.com
+
+
+|   Kmi    |    kmi.graphic@hotmail.com    |
+|   Sebastian   |    sebastiancalderon@hotmail.com    |

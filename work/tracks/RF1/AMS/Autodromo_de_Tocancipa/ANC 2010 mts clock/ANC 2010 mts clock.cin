@@ -1,0 +1,62 @@
+// Cinematic Script File, Generic (nothing but grid walk)
+
+PreRacePresentation  // Pre-race Presentation script
+{
+  ///////////////////////////////////////////////////////
+  // Defines camera, commentary and object actions
+  // during pre-race presentation
+  ///////////////////////////////////////////////////////
+
+  CinematicEvent
+  {
+    Type              = CAMERA_SET_LAST   // Set which camera will be activated when the script ends or is canceled by user.
+    // EventID           =                   // Optional Event identifier that allows us to modify or stop event in the future.
+    Probability       = 1.00              // Probability (0.0 - 1.0) that this event will happen.
+    Time              = +0.0              //
+    Iterations        = 1                 // Perform this event exactly 1 time(s)
+    Wait              = NO
+    Camera            = <PLAYER>          // Select the player's default camera.
+  }
+
+  CinematicEvent
+  {
+    Type              = CAMERA_ACQUIRE_CONTROL  // Seize control of the camera system - prevents Camera Manager from switching to the "best" trackside cam.
+    // EventID           =                         // Optional Event identifier that allows us to modify or stop event in the future.
+    Probability       = 1.00                    // Probability (0.0 - 1.0) that this event will happen - 0.0 = the event will always be skipped, 1.0 = the event will never be skipped.
+    Time              = +0                      // NOW!
+    Iterations        = 1                       // Perform event this many times (the probability of an event is tested for each iteration).
+    Wait              = NO                      // NO = next event's timer is not based on when this event finishes.
+  }
+
+CinematicEvent
+  {
+    Type              = WAIT                    // This event does nothing but take up time in the script.
+   // EventID           =                         // Optional Event identifier that allows us to modify or stop event in the future.
+    Probability       = 1.00                    // Probability (0.0 - 1.0) that this event will happen.
+    Time              = +4.0                    // 
+    Iterations        = 1                       // Perform event this many times (the probability of an event is tested for each iteration).
+    Wait              = YES                     // Proceed with rest of script immediately.
+   Camera            = tracking10
+ }
+
+CinematicEvent
+  {
+    Type              = CAMERA_SELECT
+    // EventID           =                   // Optional Event identifier that allows us to modify or stop event in the future.
+    Probability       = 1.00              // Probability (0.0 - 1.0) that this event will happen.
+    Time              = +0.0              // 
+    Iterations        = 1                 // Perform this event exactly 1 time(s)
+    Wait              = NO
+    Camera            = <PLAYER>          // Select the player's default camera.
+  }
+
+
+  CinematicEvent
+  {
+    Type              = SCRIPT_END        // Every script MUST have a SCRIPT_END event to tell the CinematicManager when the script is complete.
+    Probability       = 1.00
+    Time              = +1.5              // Wait 1-1/2 seconds before starting countdown.
+    Iterations        = 1                 // Perform event this many times (the probability of an event is tested for each iteration).
+  }
+
+}   // End of PreRacePresentation
